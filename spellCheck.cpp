@@ -9,7 +9,6 @@
 #include <regex>
 
 std::string spellCheck(std::string recLetter, std::string studentName) {
-  //std::string start = studentName.substr(0, 4);
   std::regex inputName("([Bb]art)[a-zA-Z]*");
   std::string newRecLetter = std::regex_replace(recLetter, inputName, studentName);
   return newRecLetter;
